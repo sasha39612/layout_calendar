@@ -1,0 +1,23 @@
+$cell-width: 100px;
+$cell-higth: 100px;
+$cell-gap: 1px;
+$max-width: ($cell-width + $cell-gap) * 7;
+
+$margin-left: 101px;
+
+$days-in-month: ( 
+  28,
+  29,
+  30,
+  31
+);
+
+$days-in-week: (
+  "mon": 0,
+  "tue": 1,
+  "wed": 2,
+  "thu": 3,
+  "fri": 4,
+  "sat": 5,
+  "sun": 6
+);
