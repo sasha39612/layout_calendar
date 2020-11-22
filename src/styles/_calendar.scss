@@ -5,7 +5,7 @@
   max-width: $max-width;
   margin: 0 auto;
 
-  & div {
+  & > * {
     width: $cell-width;
     height: $cell-higth;
     margin-right: $cell-gap;
@@ -19,20 +19,20 @@
     background-color: #eee;
     border: 1px solid black;
    
-    transition: 2s;
+    transition: 0.5s;
 
     cursor: pointer;
   }
 
-  & div:hover {
+  & > *:hover {
     transform: translateY(-20px);
     background-color: #faa;
-    transition: 2s;
+    transition: 0.5s;
   }
 }
 
 @for $days from 1 through 32 {
-  .calendar div:nth-child(#{$days})::after {
+  .calendar > *:nth-child(#{$days})::after {
     content: "#{$days}";
   }
 }
